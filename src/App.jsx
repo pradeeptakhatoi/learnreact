@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import './App.css'
 import UserList from './users'
+import axios from "axios";
 
 function App() {
 
@@ -11,7 +12,7 @@ function App() {
     try {
       console.log('Fetching users from API...');
       const url = 'https://jsonplaceholder.typicode.com/users';
-      const data = await fetch(url).then(res => res.json());
+      const data = await axios.get(url).then(res => res.data);
       setUsers(data);
     } catch (error) {
       console.error(err);
