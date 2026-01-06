@@ -1,0 +1,15 @@
+.users {
+    background: #FFFFFF;
+    color: #000000;
+}
+
+.users h2 {
+    border-bottom: 2px solid #000000;
+}
+
+.users .user {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+}
